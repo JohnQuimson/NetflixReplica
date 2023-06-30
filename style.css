@@ -1,0 +1,313 @@
+@font-face {
+    font-family: Netflix_originale;
+    src: url(fonts/Netflix_Sans.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Netflix_originale;
+        /* border: 1px solid pink;    */
+    
+}
+
+body{
+    background-color: #00081d;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(7, 3, 41, 0.4), #00081d), url(https://assets.nflxext.com/ffe/siteui/vlv3/d282a426-b01a-424c-9b83-2c2445e4b61a/38b64649-5178-451b-8d4c-879f5a4afee8/IT-it-20230626-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    padding: 10px 8%;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+  
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+  
+.logo{
+    width: 150px;
+    height: 55x;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    padding: 8px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: rgb(0,0,0,0.5);
+    border: 1px solid #5e5f61;
+    padding: 5px 10px;
+} 
+
+
+.language-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content{
+    position: absolute;
+    margin-top: 350px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.header-content h1{
+    font-size: 90px;
+    line-height: 100px;
+    font-weight: 700px;
+    max-width: 1250px;
+    text-align: left;
+}
+
+.header-content h3{
+    font-size: 30px;
+    font-weight: 700px;
+    max-width: 1250px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.box {
+    background-color: #00081d;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+  }
+  
+.box::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    border-radius: 10px;
+    background: radial-gradient(circle at center, blue, red);
+}
+  
+
+.box p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18.5px;
+    margin-bottom: 10px;
+}
+
+.box .email-signup {
+    margin-top: 20px;
+}
+  
+.email-signup{
+    background: #0f1118;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid #5e5f61;
+    
+}
+
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    background-color: #0f1118;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+
+/* FEATURES */
+.features{
+    padding: 15px 12%;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.layout-features{
+    margin-top: -100px;
+    margin: 0 200px;
+    border-radius: 20px;
+    background-color: rgba(9,6,38,255);
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.text-col p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.features h2{
+    margin-bottom: 20px;
+}
+
+hr{
+    border-color: #3c3c44;
+}
+
+/* FAQ */
+.faq{
+    padding: 10px 12%;
+    font-size: 25px;
+    margin-top: 150px;
+}
+
+.faq h2{
+    margin: 15px auto;
+    text-align: left;
+    max-width: 1250px;  
+}
+
+.content{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.p_speciale{
+    margin-bottom: 25px;
+}
+  
+.accordion{
+    margin: 15px auto;
+    width: 100%;
+    max-width: 1250px;  
+    
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 3.5px;
+    
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 500px;
+    background: #132144;
+    margin-bottom: 1px;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label::after{
+    content: '+';
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.1s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #132144;
+    padding: 0 20px;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.signup-finale{
+    margin: 25px auto;
+    width: 100%;
+    max-width: 1250px;  
+
+}
+.signup-finale .email-signup{
+    margin-top: 20px;
+    
+}
+
+.signup-finale small{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+
